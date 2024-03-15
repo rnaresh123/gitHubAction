@@ -31,7 +31,7 @@ public class WindowHandle {
         System.out.println("child window ID:" + childWindowID);
         //second method--->using List/ArrayList()
         List<String> windowIDsList = new ArrayList<>(windowIDs);//converting Set--->List
-//        String parentWindowId = windowIDsList.get(0);
+//        String parentWindowId = wind owIDsList.get(0);
 //        String childWindowList = windowIDsList.get(1);
 //        System.out.println("parent window id: "+parentWindowId);
 //        System.out.println("child window id :"+childWindowList);

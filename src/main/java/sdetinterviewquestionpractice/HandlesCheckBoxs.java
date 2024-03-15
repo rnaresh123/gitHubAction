@@ -30,12 +30,8 @@ public class HandlesCheckBoxs {
             if (checkboxname.equals("Laptop:") || checkboxname.equals("Bag:")) {
                 chbox.click();
             }
-
-
         }
-
     }
-
 }
 
 
