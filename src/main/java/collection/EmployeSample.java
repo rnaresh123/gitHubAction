@@ -35,7 +35,7 @@ public class EmployeSample {
         System.out.println(emp);
         List<String> nonItEmpName = getNonItEmpName(emp);
         System.out.println(nonItEmpName);
-        changeTheDesignation(emp,"khaja","developer lead");
+        changeTheDesignation(emp, "khaja", "developer lead");
         System.out.println(emp);
     }
 
@@ -50,7 +50,7 @@ public class EmployeSample {
     }
 
     public static void changeTheDesignation(List<Employe> employes, String empName, String newDesignation) {
-        List<String> designation = new ArrayList<>();
+        //List<String> designation = new ArrayList<>();
         for (Employe emp : employes) {
             if (emp.getName().equalsIgnoreCase(empName)) {
                 emp.setDesignation(newDesignation);

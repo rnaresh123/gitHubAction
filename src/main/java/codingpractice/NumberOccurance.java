@@ -2,6 +2,7 @@ package codingpractice;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class NumberOccurance {
 
@@ -19,7 +20,17 @@ public class NumberOccurance {
                 map.put(st.charAt(i), 1);
             }
         }
-        System.out.println(map);
+        //System.out.println(map);
+        int mfv = 0;
+        char c = ' ';
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            //System.out.println(entry.getKey()+" "+entry.getValue());
+            if (entry.getValue() > mfv) {
+                mfv = entry.getValue();
+                c = entry.getKey();
+            }
+        }
+        System.out.println(c);
     }
 
     public static String reverseString(String str) {
@@ -41,4 +52,5 @@ public class NumberOccurance {
         }
         return count;
     }
+
 }
