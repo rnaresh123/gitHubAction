@@ -38,13 +38,12 @@ public class NumberOfOccurance {
             if (map.containsKey(word)) {
                 map.put(word, map.get(word) + 1);
             } else {
-                map.put(word, 1);
+                map.put(word, 1);                                    //value=number key=string
             }
         }
         String maxString = "";
         int maxValue = 0;
-        Set<Map.Entry<String, Integer>> entries = map.entrySet();
-        for (Map.Entry<String, Integer> entry : entries) {
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
             if (entry.getValue() > maxValue) {
                 maxString = entry.getKey();
                 maxValue = entry.getValue();

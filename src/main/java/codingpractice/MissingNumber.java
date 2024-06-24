@@ -6,7 +6,7 @@ public class MissingNumber {
         int n = a.length + 1;
         int sum = 0;
         for (int num : a) {
-            sum += num;
+            sum = sum+num;
         }
         int totalSum = n * (n + 1) / 2;  //(56/2)=28
         int missingNumber = totalSum - sum;

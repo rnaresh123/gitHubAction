@@ -1,7 +1,9 @@
 package collection;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Sample {
     public static void main(String[] args) {
@@ -16,6 +18,20 @@ public class Sample {
         list1.add(new Student(20, "naresh", "c", markrsOfnaresh));
         list1.add(new Student(22, "sameer", "A", new int[]{80, 98, 70}));
         list1.add(new Student(40, "preetam", "A", new int[]{72, 71, 78}));
+        list1.add(new Student(43, "Aadesh", "A", new int[]{80, 98, 70}));
+        list1.add(new Student(76, "rahul", "D", new int[]{76, 71, 70}));
+        list1.add(new Student(65, "Veer", "S", new int[]{72, 71, 78}));
+        Map<Double, List<String>> map = new HashMap<>();
+        for (Student student : list1) {
+            double avgMarks = student.getAvgMarks();
+            if (!map.containsKey(avgMarks)) {
+                map.put(avgMarks, new ArrayList<>());
+            }
+//            List<String> values = map.get(sumOfMarks);
+//            values.add(student.getName());
+            map.get(avgMarks).add(student.getName());
+        }
+        System.out.println(map);
         System.out.println(list1);
 
 //        for (Student st:list1) {
@@ -51,10 +67,11 @@ public class Sample {
         }
         System.out.println(stName);
     }
-    public static List<String> getStudentsName(List<Student> students, String grade){
-        List<String> stdNames=new ArrayList<>();
-        for (Student std:students) {
-            if (std.getGrade().equalsIgnoreCase(grade)){
+
+    public static List<String> getStudentsName(List<Student> students, String grade) {
+        List<String> stdNames = new ArrayList<>();
+        for (Student std : students) {
+            if (std.getGrade().equalsIgnoreCase(grade)) {
                 stdNames.add(std.getName());
             }
         }

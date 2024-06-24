@@ -10,6 +10,7 @@ public class CharacterCount {
             }
 
         }
+        System.out.println(count);
         int[] a={2,3,4,6,9,6};
         int sum=0;
         for (int i = 0; i <a.length ; i++) {

@@ -10,11 +10,8 @@ public class removeDuplicate {
         for (int b:a) {
             set.add(b);
             list.add(b);
-
         }
         System.out.println(set);
         Collections.sort(list);
-
-
     }
 }
