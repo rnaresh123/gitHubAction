@@ -4,7 +4,7 @@ import javax.swing.text.TabableView;
 
 public class LongestPallidrome {
     public static void main(String[] args) {
-        String str = "jkhhdgfracecarjkhgggfnitinjkndj";
+        String str = "jkhhdgfracecarMANGOOOGNAGM ggfnitinjkndj";
         String abc = "";
         String longestPali = "";
         //aba abba abbcbba
