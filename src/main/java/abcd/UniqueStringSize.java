@@ -14,5 +14,6 @@ public class UniqueStringSize {
             }
         }
         System.out.println(unique.size());
+
     }
 }

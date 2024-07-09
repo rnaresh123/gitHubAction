@@ -7,7 +7,6 @@ public class TwoDandOneDArray {
         int[][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int[] b = {3, 6, 9};
         int n = 3;
-
         // Equivalent logic from the array method
         int sum = 0;
         int max = 0;

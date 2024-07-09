@@ -1,13 +1,11 @@
-package abcd;
+package capgemini_programs;
 
+public class SecondMax {
 
-import java.util.*;
-
-public class practicee {
     public static void main(String[] args) {
         int a[] = {2, 3, 4, 5, 6, 7, 8, 9, 1};
-        int firstmax = -1;
-        int secondmax = -1;
+        int firstmax = Integer.MIN_VALUE;
+        int secondmax = Integer.MIN_VALUE;
 
         for (int i = 0; i < a.length; i++) {
             if (a[i] > firstmax) {
@@ -21,7 +19,4 @@ public class practicee {
         System.out.println("Second Maximum: " + secondmax);
     }
 }
-
-
-
 

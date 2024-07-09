@@ -8,7 +8,6 @@ public class CharacterCount {
             if (str.charAt(i)=='A'|| str.charAt(i)=='O'){
                 count++;
             }
-
         }
         System.out.println(count);
         int[] a={2,3,4,6,9,6};
@@ -28,5 +27,4 @@ public class CharacterCount {
         }
         return sum;
     }
-
 }

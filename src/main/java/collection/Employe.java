@@ -7,12 +7,12 @@ public class Employe {
     private double salary;
     private String designation;
 
-    public Employe(String name, int id, String dept, double salary,String designation) {
+    public Employe(String name, int id, String dept, double salary, String designation) {
         this.name = name;
         this.id = id;
         this.dept = dept;
         this.salary = salary;
-        this.designation=designation;
+        this.designation = designation;
     }
 
     public String getName() {
@@ -54,11 +54,13 @@ public class Employe {
     public void setDesignation(String designation) {
         this.designation = designation;
     }
-    public double getAnnivalSalary(){
-        double sal=salary;
+
+    public double getAnnivalSalary() {
+        double sal = salary;
         return sal;
     }
-    public double getSalaryIncrement(){
+
+    public double getSalaryIncrement() {
         double incrSal = getAnnivalSalary() * 1.1;
         return incrSal;
     }

@@ -2,10 +2,10 @@ package codingpractice;
 
 public class ArmStrongNumbers {
     public static void main(String[] args) {
-        int n=0;
-        int rem=0;
-        int a=0;
-        for (int i = 0; i <1000 ; i++) {
+        int n = 0;
+        int rem = 0;
+        int a = 0;
+        for (int i = 0; i < 1000; i++) {
             n = i;
             while (n != 0) {
                 rem = n % 10;
@@ -15,7 +15,7 @@ public class ArmStrongNumbers {
 
 
             if (a == i) {
-                System.out.print(i+" ");
+                System.out.print(i + " ");
             }
             a = 0;
         }

@@ -15,7 +15,6 @@ public class StringBubblesort {
                 //System.out.println("it is not palindrome");
                 break;
             }
-
         }
         if (flag == true) {
             System.out.println("it is palindrome");
