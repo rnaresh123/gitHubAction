@@ -16,14 +16,17 @@ public class Employe {
     }
 
     public String getName() {
+
         return name;
     }
 
     public int getId() {
+
         return id;
     }
 
     public String getDept() {
+
         return dept;
     }
 
@@ -32,7 +35,8 @@ public class Employe {
     }
 
     public String getDesignation() {
-        return designation;
+
+         return designation;
     }
 
     public void setName(String name) {

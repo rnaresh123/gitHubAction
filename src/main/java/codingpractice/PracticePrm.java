@@ -1,27 +1,28 @@
 package codingpractice;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class PracticePrm {
-
-    public static void duplicateCharacter(String str) {
-        char[] chars = str.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            for (int j = i + 1; j < chars.length; j++) {
-                if (chars[i] == chars[j]) {
-                    System.out.print(chars[j]);
-                    break;
-
-                }
-
-            }
-
-        }
-
-    }
-
     public static void main(String[] args) {
-        String str = "automation";
-        duplicateCharacter(str);
+        int arr[]={2,4,1,7,4,8,9,5};
+        int firstmax=-1;
+        int secondmax=-1;
+        for(int a:arr){
+            if (firstmax<a){
+                secondmax=firstmax;
+                firstmax=a;
+                
+            } else if (a>secondmax && a!=firstmax) {
+                secondmax=a;
+            }
+        }
+        System.out.println(secondmax);
     }
-}
+    }
+
+
+
 
 
