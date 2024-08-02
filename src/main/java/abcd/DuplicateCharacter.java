@@ -1,6 +1,7 @@
-package codingpractice;
+package abcd;
 
-public class DuplicateCharacter {
+
+    class DuplicateCharacter {
         public static void main(String[] args) {
             String str = "automation";
             printDuplicateCharacters(str);

@@ -1,19 +1,19 @@
-package codingpractice;
+package abcd;
 
-public class StringBubblesort {
-
+public class Sample11 {
     public static void main(String[] args) {
-        String str = "madam";
-        if (isPalindrome(str)) {
-            System.out.println(str + " is a palindrome.");
-        } else {
-            System.out.println(str + " is not a palindrome.");
+        String str = "maduam";
+        if (isPallidrome(str)){
+            System.out.println("Its pallidrome");
+        }else{
+            System.out.println("its not pallidrome");
         }
     }
 
-    public static boolean isPalindrome(String str) {
+    public static boolean isPallidrome(String str) {
         int left = 0;
         int right = str.length() - 1;
+
         while (left < right) {
             if (str.charAt(left) != str.charAt(right)) {
                 return false;
@@ -26,3 +26,4 @@ public class StringBubblesort {
 
 
 }
+

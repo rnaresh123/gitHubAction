@@ -5,20 +5,18 @@ import java.util.*;
 
 public class practicee {
     public static void main(String[] args) {
-        int a[] = {2, 3, 4, 5, 6, 7, 8, 9, 1};
-        int firstmax = -1;
-        int secondmax = -1;
-
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] > firstmax) {
-                secondmax = firstmax;
-                firstmax = a[i];
-            } else if (a[i] > secondmax && a[i] != firstmax) {
-                secondmax = a[i];
+    Object[] arrays={"apple","banana","grapes",2,6,12};
+    List<Integer>integerList=new ArrayList<>();
+    List<String>stringList=new ArrayList<>();
+        for (Object element:arrays) {
+            if (element instanceof String){
+                stringList.add((String) element);
+            } else if (element instanceof Integer) {
+                integerList.add((Integer) element);
             }
         }
-        System.out.println("First Maximum: " + firstmax);
-        System.out.println("Second Maximum: " + secondmax);
+        System.out.println(integerList);
+        System.out.println(stringList);
     }
 }
 

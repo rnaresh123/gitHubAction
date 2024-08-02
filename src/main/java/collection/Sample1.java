@@ -27,7 +27,7 @@ public class Sample1 {
 
         }
         System.out.println(map);
-     //   System.out.println(list);
+        System.out.println(list);
     }
 
 }
